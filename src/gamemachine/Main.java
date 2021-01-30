@@ -1,3 +1,5 @@
+package gamemachine;
+
 public class Main {
     public static void main(String[] args) {
         GameMachineController controller = new GameMachineController(new GameMachine());

@@ -1,3 +1,5 @@
+package gamemachine;
+
 public class Game {
 
     private String title;
@@ -18,7 +20,7 @@ public class Game {
 
     @Override
     public String toString() {
-        return "Game{" +
+        return "gamemachine.Game{" +
                 "name='" + title + '\'' +
                 ", price=" + price +
                 '}';
