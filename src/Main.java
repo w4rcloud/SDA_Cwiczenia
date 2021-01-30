@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) throws NoSuchGameException, InsufficientFundsException {
+    public static void main(String[] args) {
         GameMachineController controller = new GameMachineController(new GameMachine());
         controller.addGames(new Game("Half Life", 10),
                             new Game("StarCraft", 15),
@@ -11,9 +11,8 @@ public class Main {
 
         try {
             controller.buyGame("Warcraft 3", 50);
-            controller.buyGame("Heroes 3", 10);
+//            controller.buyGame("Heroes 3", 10);
             controller.buyGame("Wacki", 1);
-
         } catch (NoSuchGameException | InsufficientFundsException e) {
             System.out.println(e.getMessage());
         }
